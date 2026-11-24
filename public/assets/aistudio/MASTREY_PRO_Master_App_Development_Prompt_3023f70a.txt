@@ -1,0 +1,2137 @@
+MASTREY PRO — MASTER APP DEVELOPMENT PROMPT
+
+MASTER • PRACTICE • WIN
+
+The Complete Free AI Education Ecosystem
+
+---
+
+1. PROJECT IDENTITY
+
+Build a complete, production-oriented, premium-quality educational application called MASTREY PRO.
+
+App Name: MASTREY PRO
+Tagline: MASTER • PRACTICE • WIN
+Developer: V. CHENCHUKIRAN
+Developer Title: DevSecOps & Cloud Engineering
+Platform: Mobile-first application, responsive web application, Android-ready
+Target Users: JEE, NEET UG, CA Foundation students
+Primary Goal: Provide comprehensive educational resources, AI-powered learning, practice questions, mock tests, revision tools, and performance analytics completely free for students.
+
+MASTREY PRO must feel like a professional education technology product. It must not look like a basic website template, a generic AI chatbot, a static dashboard, or a simple collection of cards.
+
+Create a real, modular, functional application with a polished UI, working navigation, functional buttons, state management, data persistence, reusable components, and a scalable architecture.
+
+---
+
+2. CORE PRODUCT VISION
+
+MASTREY PRO is an all-in-one education platform that combines:
+
+- Complete syllabus
+- Structured theory notes
+- Topic-wise learning
+- Formula library
+- Important concepts
+- Shortcuts and tricks
+- Solved examples
+- Practice questions
+- AI-generated tests
+- Mock examinations
+- Previous-year-question-style practice
+- AI educational tutors
+- Personalized learning
+- Revision tools
+- Student analytics
+- Study planner
+- Rank and college prediction systems where supported by verified data
+- Bookmarks
+- Progress tracking
+- Notifications
+- Offline access to cached resources
+
+The complete learning cycle:
+
+LEARN → UNDERSTAND → PRACTICE → TEST → ANALYZE → IMPROVE → REVISE → REPEAT
+
+Everything should be organized around this learning cycle.
+
+The app should be free to use. Avoid paywalls, premium locks, forced subscriptions, and paid access to educational content.
+
+---
+
+3. SUPPORTED EXAM SYSTEMS
+
+Create three independent examination ecosystems within the same app.
+
+A. JEE SYSTEM
+
+Support:
+
+- JEE Main
+- JEE Advanced
+
+Subjects:
+
+- Physics
+- Chemistry
+- Mathematics
+
+JEE Main and JEE Advanced must have their own syllabus configurations, difficulty, test patterns, scoring rules, question types, analytics, and preparation paths.
+
+Features:
+
+- Complete syllabus
+- Chapter-wise theory
+- Formula sheets
+- Topic practice
+- Previous-year questions where properly sourced
+- Mock tests
+- Advanced-level problem solving
+- Time management
+- Performance analysis
+- JEE Main percentile/rank predictor
+- JEE Advanced rank predictor
+- IIT/NIT/IIIT/other college and branch predictor based on historical data
+
+B. NEET UG SYSTEM
+
+Subjects:
+
+- Physics
+- Chemistry
+- Biology
+  - Botany
+  - Zoology
+
+Features:
+
+- NCERT-oriented learning
+- Chapter-wise notes
+- Biology concepts
+- Important definitions
+- Diagrams and diagram-based learning
+- Formula library
+- Topic-wise MCQs
+- Assertion/reasoning questions where applicable
+- Practice tests
+- Full-length mock tests
+- Exam analysis
+- Weak-topic tracking
+- NEET score and rank predictor based on appropriate historical data
+
+NEET must not contain a Mathematics subject in its main preparation dashboard.
+
+C. CA FOUNDATION SYSTEM
+
+Subjects and modules must be configurable to the official current syllabus.
+
+Include:
+
+- Accounting
+- Business Laws
+- Quantitative Aptitude
+- Business Economics
+
+Features:
+
+- Accounting concepts
+- Journal entries
+- Ledger practice
+- Financial calculations
+- Law concepts and definitions
+- Economics theory
+- Quantitative aptitude
+- Chapter-wise MCQs
+- Case-based practice where appropriate
+- Mock examinations
+- Detailed solutions
+- Exam-specific performance analysis
+
+Do not mix JEE, NEET and CA content. Each exam should have its own content engine and AI configuration.
+
+---
+
+4. APPLICATION DESIGN AND VISUAL IDENTITY
+
+Create an exceptional premium interface.
+
+The app should look like a combination of:
+
+- Modern AI platform
+- Premium educational application
+- Futuristic productivity dashboard
+- Professional exam preparation ecosystem
+
+Theme
+
+Use a dark-first visual design.
+
+Base colors:
+
+- Midnight black
+- Deep navy
+- Charcoal
+- Electric blue
+- Violet
+- Cyan accents
+- Subtle white text
+- Green for success
+- Red for errors
+- Amber for warnings
+
+Use gradients thoughtfully.
+
+Avoid:
+
+- Plain white default interfaces
+- Cheap-looking templates
+- Excessive colors
+- Oversized empty cards
+- Unnecessary animations
+- Clutter
+- Excessive glass effects
+- Too many glowing elements
+- Tiny unreadable text
+- Fake statistics
+- Generic dashboard layouts
+
+Design elements
+
+- Premium glassmorphism
+- Subtle glow
+- Smooth gradients
+- Layered surfaces
+- Soft shadows
+- Modern typography
+- Rounded corners
+- Beautiful icons
+- Animated progress bars
+- Interactive charts
+- Smooth transitions
+- High-quality empty states
+- Skeleton loading
+- Subtle motion effects
+- Responsive cards
+- Polished modal dialogs
+
+Use a modern typography system such as Inter or a similar readable font.
+
+Maintain consistent spacing, typography, colors, border radius, shadows, and component styles throughout the application.
+
+Animation requirements
+
+Implement tasteful animations:
+
+- Animated splash screen
+- Logo reveal
+- Loading transitions
+- Page transitions
+- Button interactions
+- Card hover/tap effects
+- Progress animations
+- Animated charts
+- Streak celebrations
+- Achievement unlock animations
+- Smooth bottom navigation
+- Modal transitions
+- Loading skeletons
+- Subtle background movement
+
+Animations must be smooth and lightweight.
+
+Support reduced-motion preferences.
+
+---
+
+5. SPLASH SCREEN AND APP INTRODUCTION
+
+Create an impressive app launch experience.
+
+Show:
+
+- MASTREY PRO logo
+- Animated logo reveal
+- Tagline: MASTER • PRACTICE • WIN
+- Subtle futuristic background
+- Loading animation
+- Progress indicator
+
+After the splash screen, show a welcome/onboarding screen.
+
+Onboarding should explain:
+
+1. Learn everything in one place.
+2. Practice without limits.
+3. Generate personalized mock tests.
+4. Get help from AI.
+5. Analyze and improve your performance.
+
+Include a Skip option.
+
+---
+
+6. AUTHENTICATION SYSTEM
+
+Create two entry options.
+
+Option 1 — Continue with Google
+
+Implement Google authentication.
+
+Registered users should have:
+
+- Unique account
+- Personal profile
+- Selected examination
+- Saved progress
+- Test history
+- Practice history
+- Bookmarks
+- AI conversations
+- Study plan
+- Preferences
+- Synchronization between devices
+
+Option 2 — Continue as Guest
+
+Guest mode must work without registration.
+
+Guests should be able to:
+
+- Explore the app
+- Read available notes
+- Use formula library
+- Practice
+- Generate or access tests according to available resources
+- Use available AI features within reasonable usage limits
+- Save progress locally
+
+Use local storage or a suitable local database for guest data.
+
+Allow a guest to convert to a registered account later and transfer their local progress wherever technically possible.
+
+Do not force login just to explore the app.
+
+---
+
+7. STUDENT PROFILE AND PERSONALIZATION
+
+After authentication or guest entry, provide profile setup.
+
+Fields:
+
+- Display name
+- Profile avatar
+- Examination
+- Target exam year
+- Current preparation level
+- Daily study target
+- Preferred language
+- Study reminders
+
+The profile should be editable.
+
+The app should personalize the dashboard based on the user's exam and goals.
+
+---
+
+8. HOME DASHBOARD
+
+Create a dynamic personalized home screen.
+
+Show:
+
+- Greeting
+- Profile avatar
+- Selected exam
+- Exam countdown
+- Daily study goal
+- Study streak
+- XP/level
+- Continue learning
+- Daily practice
+- Quick test
+- AI tutor
+- Weak subjects
+- Recent test performance
+- Revision recommendations
+- Today's study plan
+- Notifications
+- Quick access to formulas and saved items
+
+The dashboard must not be overcrowded.
+
+Prioritize the most important actions.
+
+Main dashboard cards
+
+Continue Learning
+
+Resume the last opened chapter or topic.
+
+Practice Now
+
+Start topic-wise or chapter-wise practice immediately.
+
+Generate Test
+
+Open test configuration.
+
+Ask MASTREY AI
+
+Open the exam-specific AI tutor.
+
+Revision Center
+
+Show due revisions and weak topics.
+
+Performance
+
+Display recent performance and improvement.
+
+Make cards interactive and functional.
+
+---
+
+9. COMPLETE LEARNING AND SYLLABUS ENGINE
+
+Create a scalable content architecture.
+
+Structure:
+
+Exam → Subject → Chapter → Topic → Subtopic → Learning Content
+
+Each chapter should contain:
+
+- Chapter introduction
+- Learning objectives
+- Complete theory
+- Topic-wise explanations
+- Definitions
+- Important concepts
+- Formulas
+- Derivations where relevant
+- Solved examples
+- Shortcuts
+- Common mistakes
+- Exam tips
+- Important questions
+- Practice questions
+- Revision notes
+- Flashcards
+- Chapter test
+
+Theory content
+
+The learning engine should support multiple explanation levels.
+
+Beginner Mode
+
+Explain concepts from the absolute basics.
+
+Standard Mode
+
+Explain the concept at the required examination level.
+
+Advanced Mode
+
+Include deeper conceptual understanding and challenging applications.
+
+Use:
+
+- Clear language
+- Headings
+- Examples
+- Mathematical notation
+- Tables
+- Diagrams
+- Step-by-step explanations
+- Highlights for important concepts
+
+Do not fill the content library with fake or repetitive text.
+
+Build a content management structure that allows new chapters, topics, theory, formulas, questions, and explanations to be added without changing the application code.
+
+If content is not yet populated, clearly mark it as unavailable or awaiting verified content. Never pretend empty content is complete.
+
+---
+
+10. FORMULA LIBRARY — GLOBAL FORMULA SEARCH
+
+Build a dedicated Formula Center.
+
+The formula library should cover all relevant formulas across supported examinations and subjects, and be expandable to additional educational subjects in the future.
+
+Organize formulas by:
+
+- Examination
+- Subject
+- Chapter
+- Topic
+- Formula category
+
+Each formula should support:
+
+- Formula title
+- Mathematical expression
+- Variable meanings
+- Units
+- Explanation
+- Conditions of use
+- Example
+- Related formulas
+- Related topics
+- Importance level
+- Bookmark
+
+Formula search
+
+Implement global search.
+
+Users can search by:
+
+- Formula name
+- Symbol
+- Keyword
+- Topic
+- Chapter
+- Concept
+
+Example:
+
+Searching "kinetic energy" should show the formula, explanation, variables, units, example and related concepts.
+
+Provide:
+
+- Copy formula
+- Bookmark
+- Share
+- Open related chapter
+- Start related practice
+
+Math rendering must be clear and correct. Support proper mathematical notation using a reliable math-rendering system.
+
+---
+
+11. NOTES AND REVISION CENTER
+
+Create a complete notes system.
+
+Features:
+
+- Chapter notes
+- Quick revision notes
+- Short notes
+- Formula notes
+- Important definitions
+- Exam-focused summaries
+- Personal notes
+- Highlighting
+- Bookmarks
+- Saved content
+- Revision reminders
+
+Provide a dedicated Revision Center.
+
+Track:
+
+- Topics learned
+- Topics not learned
+- Topics needing revision
+- Weak topics
+- Revision history
+- Revision due dates
+
+Implement spaced-repetition functionality.
+
+Recommend revision according to:
+
+- Previous performance
+- Time since last revision
+- Difficulty
+- Student confidence
+- Incorrect answers
+
+Allow students to mark:
+
+- Easy
+- Need revision
+- Difficult
+
+---
+
+12. PRACTICE ENGINE
+
+Build a fully functional practice system.
+
+Practice categories:
+
+- Subject-wise
+- Chapter-wise
+- Topic-wise
+- Subtopic-wise
+- Easy
+- Medium
+- Hard
+- Mixed
+- Custom practice
+- Weak-topic practice
+- Wrong-answer practice
+- Bookmarked questions
+
+Question formats
+
+Support:
+
+- Single correct answer
+- Multiple correct answers where the exam requires
+- Numerical answer
+- Integer-type questions
+- Assertion/reason
+- Match-the-following
+- Case-based questions
+- Passage-based questions
+- Subject-specific formats
+
+The supported question types must be configurable by examination.
+
+Practice mode
+
+Provide optional immediate feedback.
+
+After answering:
+
+- Show correct or incorrect
+- Reveal the correct answer
+- Explain the solution
+- Show the relevant theory
+- Show the related formula
+- Allow bookmarking
+- Allow reporting an error
+
+Track all practice activity.
+
+---
+
+13. ADVANCED MOCK TEST GENERATOR
+
+This is a core feature of MASTREY PRO.
+
+Build an advanced test generation system.
+
+Test configuration
+
+Users must be able to choose:
+
+- Examination
+- Exam pattern
+- Subject
+- Chapters
+- Topics
+- Difficulty
+- Number of questions
+- Duration
+- Question type
+- Full test or partial test
+- Custom distribution
+
+Duration range:
+
+Minimum: 10 minutes
+Maximum: 180 minutes
+
+Allow custom durations within the supported range.
+
+Difficulty
+
+- Easy
+- Medium
+- Hard
+- Mixed
+
+Test modes
+
+Practice Mode
+
+- Feedback can be shown after every answer.
+- Students can review concepts while practicing.
+- Timer is optional.
+
+Exam Mode
+
+- No answer reveal before submission.
+- Full timer.
+- Exam-like interface.
+- No distracting feedback.
+- Submit at the end or when time expires.
+
+Question generation
+
+Questions should come from:
+
+1. Verified question bank
+2. Properly sourced previous-year questions
+3. AI-generated original questions
+4. Concept-based variations
+5. Student-specific weak-topic targeting
+
+Clearly identify sourced PYQs and AI-generated questions. Never label an AI-generated question as an official previous-year question.
+
+Test quality
+
+Each question must contain:
+
+- Unique question ID
+- Exam
+- Subject
+- Chapter
+- Topic
+- Difficulty
+- Question text
+- Options where applicable
+- Correct answer
+- Detailed solution
+- Explanation
+- Formula/concept
+- Question source
+- Validation status
+
+Never generate tests from duplicated or invalid questions.
+
+---
+
+14. NON-REPEATING QUESTION ENGINE
+
+Create a persistent question history system.
+
+This feature must be a priority.
+
+Every question should have a unique identifier.
+
+Track question history separately for each user.
+
+Maintain:
+
+- Questions seen
+- Questions attempted
+- Questions answered correctly
+- Questions answered incorrectly
+- Questions skipped
+- Questions bookmarked
+- Last attempt date
+- Attempt count
+- Performance history
+
+Default test-generation rules
+
+- Do not repeat questions within a test.
+- Avoid questions previously seen by the student.
+- Avoid near-duplicate questions.
+- Avoid reusing identical question wording.
+- Avoid generating the same question with only changed numbers.
+- Generate new questions testing different conceptual approaches.
+- Maintain a balanced distribution of topics.
+- Maintain the requested difficulty.
+- Do not select unverified questions.
+- Respect examination patterns.
+
+If the question bank is insufficient, tell the user that the available question pool is limited. Never falsely claim that all questions are new.
+
+Revision mode exception
+
+Users may intentionally select:
+
+- Repeat wrong questions
+- Repeat bookmarked questions
+- Repeat previously attempted questions
+- Revise all previous questions
+
+The repetition prevention must be configurable, with revision mode explicitly overriding it.
+
+Similarity detection
+
+Implement duplicate detection through:
+
+- Normalized text comparison
+- Question fingerprints
+- Similarity checking
+- Concept and structure similarity
+- Duplicate answer/solution checking
+
+AI-generated questions should be checked before being added to the question bank.
+
+---
+
+15. EXAM INTERFACE
+
+Create a professional examination screen.
+
+Display:
+
+- Exam title
+- Subject
+- Test title
+- Timer
+- Question number
+- Question navigation
+- Answer options
+- Save and next
+- Mark for review
+- Clear answer
+- Previous question
+- Next question
+- Submit test
+
+Question navigator
+
+Use examination-style status indicators.
+
+- Unvisited
+- Answered
+- Unanswered
+- Marked for review
+- Answered and marked for review
+
+Provide a question grid.
+
+Timer
+
+- Accurate countdown
+- Warning when time is low
+- Auto-submit when the timer reaches zero
+- Confirm submission if the user attempts to leave
+- Preserve answers during navigation
+- Recover test state if the page refreshes, where feasible
+
+Submission
+
+Show a confirmation dialog.
+
+After submission, calculate results using the correct examination marking rules.
+
+---
+
+16. TEST RESULTS AND DETAILED ANALYSIS
+
+After every test, display a premium results screen.
+
+Include:
+
+- Total score
+- Maximum marks
+- Percentage
+- Accuracy
+- Correct answers
+- Incorrect answers
+- Unattempted answers
+- Total time
+- Average time per question
+- Subject-wise performance
+- Chapter-wise performance
+- Topic-wise performance
+- Difficulty-wise performance
+
+Performance insights
+
+Analyze:
+
+- Strongest subjects
+- Weakest subjects
+- Strongest chapters
+- Weakest chapters
+- Topics needing revision
+- Time management
+- Accuracy issues
+- Repeated mistakes
+- Improvement or decline
+
+Review answers
+
+Provide a complete question review.
+
+For every question:
+
+- Student's answer
+- Correct answer
+- Correct/incorrect status
+- Detailed explanation
+- Step-by-step solution
+- Relevant theory
+- Relevant formula
+- Difficulty
+- Topic
+- Time spent
+- Report error button
+
+Next actions
+
+Buttons:
+
+- Retry wrong questions
+- Practice weak topics
+- Generate another test
+- Review formulas
+- Revise chapters
+- Return to dashboard
+
+---
+
+17. MASTREY AI — AI EDUCATION SYSTEM
+
+Create a dedicated AI assistant interface.
+
+The assistant must adapt to the selected examination.
+
+Create three distinct AI profiles.
+
+MASTREY JEE AI
+
+Expert educational assistant for:
+
+- JEE Main
+- JEE Advanced
+- Physics
+- Chemistry
+- Mathematics
+- Problem solving
+- Numerical questions
+- Formula derivation
+- Shortcuts
+- Advanced concepts
+
+MASTREY NEET AI
+
+Expert educational assistant for:
+
+- NEET UG
+- Physics
+- Chemistry
+- Botany
+- Zoology
+- NCERT-oriented concepts
+- Biology explanations
+- Medical entrance practice
+- MCQ generation
+
+MASTREY CA AI
+
+Expert educational assistant for:
+
+- CA Foundation
+- Accounting
+- Business Law
+- Quantitative Aptitude
+- Business Economics
+- Accounting calculations
+- Legal concepts
+- Case-based learning
+
+AI interface
+
+Include:
+
+- Chat interface
+- Message bubbles
+- Typing indicator
+- Streaming responses where supported
+- New conversation
+- Conversation history
+- Clear conversation
+- Copy response
+- Retry
+- Regenerate
+- Bookmark answer
+- Report incorrect AI answer
+- Text input
+- Send button
+
+AI capabilities
+
+The AI should:
+
+- Answer educational questions
+- Explain topics from beginner level
+- Explain step-by-step
+- Solve equations
+- Solve numerical questions
+- Explain wrong answers
+- Generate practice questions
+- Generate mock tests
+- Generate chapter summaries
+- Generate revision notes
+- Generate flashcards
+- Create study plans
+- Identify misconceptions
+- Explain formulas
+- Compare concepts
+- Adapt to the student's level
+
+AI response styles
+
+Allow the student to choose:
+
+- Simple explanation
+- Step-by-step
+- Short answer
+- Detailed answer
+- Exam-focused
+- Advanced
+
+AI context
+
+The AI must know:
+
+- Selected examination
+- Selected subject
+- Current chapter or topic where relevant
+- Student's preferred explanation style
+- Student's weak topics if the user consents to personalization
+
+Do not mix different exam syllabi.
+
+---
+
+18. AI QUESTION AND SOLUTION VALIDATION
+
+Accuracy is essential.
+
+AI responses must not be presented as guaranteed correct.
+
+Implement the best feasible validation pipeline.
+
+For AI-generated questions:
+
+1. Generate question.
+2. Generate answer.
+3. Generate detailed solution.
+4. Validate mathematical consistency.
+5. Check answer against the solution.
+6. Check duplicate similarity.
+7. Validate question format.
+8. Check examination suitability.
+9. Flag uncertain content.
+10. Store only after successful validation, or clearly mark it as unverified.
+
+For mathematics and numerical questions, use a suitable computational validation system where feasible.
+
+For educational theory:
+
+- Validate against trusted reference content.
+- Prioritize official syllabi, textbooks and verified materials.
+- Do not invent citations.
+- Do not fabricate official questions.
+
+Provide a Report Incorrect Question / Report AI Error option.
+
+---
+
+19. AI BACKEND AND USAGE MANAGEMENT
+
+Design AI so the application is not permanently dependent on a single AI provider.
+
+Create a modular AI service layer.
+
+It should support:
+
+- Provider configuration
+- Model configuration
+- API key management on secure backend
+- Rate limiting
+- Usage tracking
+- Error handling
+- Retry logic
+- Fallback providers
+- Token limits
+- Guest usage limits
+- Registered user usage limits
+
+Never expose private API keys in client-side JavaScript, browser source code, or public repositories.
+
+Do not use fake AI responses as if they were real AI.
+
+If AI service is unavailable, display a clear error and preserve the user's message.
+
+Prioritize a free or free-tier-compatible implementation while keeping the architecture replaceable.
+
+---
+
+20. PERFORMANCE ANALYTICS ENGINE
+
+Create a data-driven student analytics system.
+
+Track:
+
+- Total study time
+- Study sessions
+- Daily activity
+- Weekly activity
+- Study streak
+- Subjects studied
+- Chapters completed
+- Topics completed
+- Questions attempted
+- Accuracy
+- Test scores
+- Speed
+- Difficulty performance
+- Weak areas
+- Improvement history
+
+Analytics dashboard
+
+Include:
+
+- Score trend chart
+- Accuracy chart
+- Study time chart
+- Subject comparison
+- Chapter comparison
+- Weak-topic chart
+- Test history
+- Monthly progress
+- Weekly progress
+
+Use real student activity.
+
+Do not populate charts with fake data in production. If preview/demo data is necessary, label it clearly as demo data.
+
+---
+
+21. JEE RANK, PERCENTILE AND COLLEGE PREDICTOR
+
+Build a separate prediction module for JEE.
+
+JEE Main
+
+Allow:
+
+- Marks
+- Examination session
+- Year
+- Category
+- Relevant other filters supported by reliable data
+
+Estimate:
+
+- Percentile
+- Rank range
+- College eligibility
+- Possible colleges
+- Possible branches
+
+JEE Advanced
+
+Allow:
+
+- Marks
+- Year
+- Category
+- Relevant rank data
+
+Estimate:
+
+- Rank range
+- IIT possibilities
+- Branch possibilities
+
+College predictor
+
+Support:
+
+- IIT
+- NIT
+- IIIT
+- GFTI
+- Other supported institutions
+
+Provide filters:
+
+- College
+- Branch
+- Category
+- Rank
+- Gender eligibility rules where officially relevant
+
+Use verified historical cutoff data.
+
+Explain that predictions are estimates, not guarantees.
+
+Never create fake cutoff tables or pretend predictions are official.
+
+If verified data is unavailable, clearly state the limitation.
+
+---
+
+22. NEET SCORE AND RANK PREDICTOR
+
+Create a NEET prediction module.
+
+Allow users to input:
+
+- Expected marks
+- Exam year
+- Category where applicable
+
+Display:
+
+- Estimated rank range
+- Estimated percentile where supported
+- Historical comparisons
+- College possibilities where verified data is available
+
+Use verified historical data.
+
+Clearly explain uncertainty and changing cutoffs.
+
+---
+
+23. STUDY PLANNER
+
+Create a smart study planning system.
+
+Users can configure:
+
+- Exam
+- Target exam date
+- Daily available hours
+- Subjects
+- Chapters
+- Preparation level
+- Completed topics
+- Weak topics
+- Preferred study times
+- Revision requirements
+
+Generate:
+
+- Daily study plans
+- Weekly plans
+- Chapter completion plans
+- Revision schedules
+- Practice schedules
+- Mock-test schedules
+
+Plan logic
+
+Prioritize:
+
+- Incomplete chapters
+- Weak topics
+- High-priority topics
+- Revision due
+- Upcoming examination
+- Student availability
+
+Allow students to:
+
+- Mark tasks completed
+- Reschedule
+- Pause plans
+- Modify targets
+- Track progress
+
+The plan should be realistic and adjustable.
+
+---
+
+24. FLASHCARDS AND SMART REVISION
+
+Create a flashcard engine.
+
+Card types:
+
+- Formula
+- Definition
+- Concept
+- Reaction
+- Law
+- Accounting entry
+- Important fact
+- Question and answer
+
+Features:
+
+- Flip card animation
+- Shuffle
+- Chapter filter
+- Subject filter
+- Bookmark
+- Difficulty
+- Know it
+- Need revision
+- Repeat later
+
+Implement spaced repetition.
+
+Use previous answers to determine future review frequency.
+
+---
+
+25. GAMIFICATION
+
+Create a lightweight educational achievement system.
+
+Features:
+
+- XP
+- Levels
+- Daily streak
+- Weekly goals
+- Achievements
+- Chapter completion badges
+- Practice milestones
+- Test milestones
+- Study streak rewards
+
+Reward consistent learning rather than endless app usage.
+
+Do not make gamification distracting or addictive.
+
+---
+
+26. SEARCH ENGINE
+
+Implement global search.
+
+Search across:
+
+- Theory
+- Notes
+- Formulas
+- Chapters
+- Topics
+- Questions
+- AI conversations
+- Bookmarks
+
+Provide:
+
+- Search suggestions
+- Recent searches
+- Filters
+- Exam selection
+- Subject selection
+- Search results
+- Direct navigation
+
+Search must be fast and useful.
+
+---
+
+27. BOOKMARKS AND SAVED CONTENT
+
+Create a Saved Items section.
+
+Users can save:
+
+- Formulas
+- Notes
+- Topics
+- Questions
+- AI answers
+- Revision cards
+
+Organize saved items into:
+
+- Collections
+- Subject
+- Exam
+- Chapter
+
+Allow:
+
+- Remove
+- Search
+- Filter
+- Export where supported
+
+---
+
+28. NOTIFICATIONS
+
+Implement notifications where supported.
+
+Notification categories:
+
+- Daily study reminders
+- Revision reminders
+- Study plan reminders
+- Streak alerts
+- Test reminders
+- Progress notifications
+
+Users must control notification preferences.
+
+Avoid excessive notifications.
+
+---
+
+29. SETTINGS CENTER
+
+Create a comprehensive settings screen.
+
+Appearance
+
+- Dark mode
+- Light mode
+- System mode
+- Accent color
+- Interface density
+
+Reading
+
+- Text size
+
+- Small
+
+- Default
+
+- Large
+
+- Extra large
+
+- Line spacing
+
+- Reading comfort
+
+- Math display settings
+
+Accessibility
+
+- Reduced motion
+- High contrast
+- Larger controls
+- Screen reader-friendly labels
+
+Notifications
+
+- Enable/disable
+- Reminder time
+- Study reminders
+- Revision alerts
+- Test alerts
+
+AI Settings
+
+- Selected AI exam profile
+- Explanation style
+- Response length
+- Personalization preferences
+
+Account
+
+- User information
+- Google account
+- Guest profile
+- Sync status
+- Sign out
+
+Data
+
+- Export data
+- Clear local cache
+- Clear AI history
+- Delete account
+- Privacy controls
+
+App
+
+- App version
+- Build number
+- Update information
+- Feedback
+- Report bugs
+
+All settings must actually work. Do not create decorative toggles that do nothing.
+
+---
+
+30. DEVELOPER PROFILE
+
+Create a premium About Developer page.
+
+Developer name:
+
+V. CHENCHUKIRAN
+
+Developer title:
+
+DEVSECOPS & CLOUD ENGINEERING
+
+Role:
+
+- Founder
+- Developer
+- Creator of MASTREY PRO
+
+Developer message:
+
+"Technology should not create barriers to education. MASTREY PRO is built with the vision of bringing powerful learning tools, practice systems and AI assistance together in one accessible platform for every student."
+
+Design:
+
+- Premium developer profile
+- Animated background
+- Elegant profile section
+- Developer name
+- Role
+- App vision
+- Technologies used
+- Credits
+- Version
+- Feedback button
+- Report bug
+- Contact section when configured
+
+Do not invent personal email addresses, social links, certifications or biography.
+
+Display the developer identity exactly as configured.
+
+---
+
+31. APP NAVIGATION
+
+Create an intuitive navigation system.
+
+Primary navigation should include:
+
+- Home
+- Learn
+- Practice
+- Tests
+- AI
+
+Additional sections should be accessible through navigation or dashboard shortcuts:
+
+- Formula Center
+- Revision
+- Study Planner
+- Analytics
+- Bookmarks
+- Profile
+- Settings
+
+On mobile, use a polished bottom navigation bar.
+
+On tablets and desktop, use an adaptive sidebar or responsive navigation.
+
+Keep navigation consistent.
+
+---
+
+32. DATABASE ARCHITECTURE
+
+Design a scalable database.
+
+Suggested entities:
+
+Users
+
+- User ID
+- Name
+- Email where applicable
+- Profile
+- Selected exam
+- Target exam year
+- Preferences
+- Created date
+
+Exams
+
+- Exam ID
+- Name
+- Pattern
+- Syllabus version
+- Scoring rules
+
+Subjects
+
+- Subject ID
+- Exam ID
+- Name
+
+Chapters
+
+- Chapter ID
+- Subject ID
+- Name
+- Order
+- Importance where verified
+
+Topics
+
+- Topic ID
+- Chapter ID
+- Name
+- Order
+
+Learning content
+
+- Content ID
+- Topic ID
+- Theory
+- Examples
+- Notes
+- Version
+- Verification status
+
+Formulas
+
+- Formula ID
+- Subject
+- Chapter
+- Topic
+- Expression
+- Explanation
+- Units
+- Verification status
+
+Questions
+
+- Question ID
+- Exam
+- Subject
+- Chapter
+- Topic
+- Difficulty
+- Question text
+- Options
+- Correct answer
+- Solution
+- Source
+- Validation status
+- Similarity fingerprint
+
+Attempts
+
+- Attempt ID
+- User ID
+- Question ID
+- User answer
+- Correctness
+- Time taken
+- Date
+
+Tests
+
+- Test ID
+- User ID
+- Configuration
+- Questions
+- Duration
+- Score
+- Results
+- Date
+
+Bookmarks
+
+- User ID
+- Content ID
+- Type
+- Date
+
+Study plans
+
+- User ID
+- Target date
+- Daily tasks
+- Completed tasks
+- Progress
+
+AI conversations
+
+- User ID
+- Exam profile
+- Conversation ID
+- Messages
+- Timestamps
+
+Revision history
+
+- User ID
+- Topic ID
+- Confidence
+- Revision date
+- Next review date
+
+Design appropriate relationships, indexes, validation, access control and migrations.
+
+---
+
+33. TECHNICAL ARCHITECTURE
+
+Use a modern, modular, maintainable technology stack.
+
+Preferred implementation:
+
+- React
+- TypeScript
+- Vite
+- Tailwind CSS
+- Framer Motion
+- Firebase Authentication
+- Firestore
+- Firebase Storage where required
+- IndexedDB for offline/local persistence
+- Capacitor for Android packaging
+- Reliable math rendering
+- Chart library for analytics
+
+Use a modular architecture.
+
+Suggested modules:
+
+- App shell
+- Authentication
+- Dashboard
+- Syllabus
+- Learning engine
+- Formula engine
+- Practice engine
+- Question bank
+- Test engine
+- AI engine
+- Analytics engine
+- Study planner
+- Flashcards
+- Bookmarks
+- Notifications
+- Settings
+- Developer profile
+- Data services
+- Validation services
+
+Keep UI, logic, data access and AI integrations separated.
+
+Use reusable components.
+
+Use clear naming.
+
+Use environment variables for configuration.
+
+Do not place secrets in client-side code.
+
+Do not create one enormous file containing the entire application.
+
+---
+
+34. OFFLINE SUPPORT
+
+Provide offline support wherever feasible.
+
+Cached resources should include:
+
+- Previously opened notes
+- Saved formulas
+- Bookmarks
+- Recent learning content
+- Local study plan
+- Test state
+- Guest progress
+
+Show offline status.
+
+When internet connectivity returns, synchronize supported data.
+
+Do not silently discard student progress.
+
+---
+
+35. SECURITY AND PRIVACY
+
+Build security from the beginning.
+
+Implement:
+
+- Secure authentication
+- Database access control
+- User-specific data permissions
+- Input validation
+- API rate limits
+- Protected backend services
+- Safe error handling
+- Secure AI API integration
+- Abuse prevention
+- Guest limits
+- Account deletion
+- Privacy controls
+
+Never expose:
+
+- AI API secrets
+- Private database credentials
+- Authentication secrets
+- Administrative credentials
+
+A user must never be able to access another user's private data.
+
+---
+
+36. CONTENT QUALITY AND DATA INTEGRITY
+
+Educational accuracy is a priority.
+
+Do not:
+
+- Invent official syllabi
+- Invent official PYQs
+- Invent college cutoffs
+- Invent rank data
+- Invent verified statistics
+- Present AI guesses as facts
+- Display incorrect formulas as verified
+- Generate repetitive filler notes
+- Create empty buttons pretending to work
+
+Use official sources whenever available.
+
+Maintain content metadata:
+
+- Source
+- Examination
+- Syllabus version
+- Date updated
+- Verification status
+
+Clearly differentiate:
+
+- Official content
+- Verified educational content
+- AI-generated content
+- Unverified content
+
+---
+
+37. PERFORMANCE REQUIREMENTS
+
+The app should:
+
+- Load quickly
+- Work smoothly on low- and mid-range Android devices
+- Minimize unnecessary network requests
+- Optimize images
+- Lazy-load heavy components
+- Avoid excessive animations
+- Cache appropriate content
+- Maintain smooth scrolling
+- Support different screen sizes
+- Handle errors gracefully
+
+Do not sacrifice performance for visual effects.
+
+---
+
+38. RESPONSIVE DESIGN
+
+Design for:
+
+- Android mobile phones
+- Small mobile screens
+- Large mobile screens
+- Tablets
+- Desktop
+- Web browsers
+
+Mobile must be the primary design target.
+
+Ensure:
+
+- No horizontal overflow
+- Proper touch targets
+- Readable text
+- Correct keyboard behavior
+- Responsive cards
+- Responsive charts
+- Adaptive navigation
+- Proper spacing
+- Safe areas
+
+---
+
+39. ERROR HANDLING
+
+Create a professional error-handling system.
+
+Handle:
+
+- Internet failure
+- AI service failure
+- Login failure
+- Database failure
+- Test generation failure
+- Invalid question
+- Missing content
+- Synchronization error
+- Offline mode
+- Session expiration
+
+Show clear messages.
+
+Provide retry actions when appropriate.
+
+Never lose a student's test answers because of a temporary error.
+
+---
+
+40. EMPTY STATES AND LOADING STATES
+
+Every section must have a designed empty state.
+
+Examples:
+
+- No test history
+- No bookmarks
+- No revision due
+- No study plan
+- No search results
+- No AI conversations
+
+Use helpful messages and relevant actions.
+
+Loading states should be polished with skeletons or subtle animations.
+
+---
+
+41. APP STRUCTURE AND IMPLEMENTATION RULES
+
+Build the complete application using reusable components and modular files.
+
+Keep these concerns separated:
+
+- Main app shell
+- UI components
+- Styling
+- Navigation
+- Authentication
+- Database
+- Learning content
+- Questions
+- Tests
+- AI
+- Analytics
+- Settings
+
+Use clean code.
+
+Use consistent conventions.
+
+Add comments where useful.
+
+Do not duplicate logic.
+
+Do not make every screen an independent disconnected design.
+
+The app must share state and data correctly.
+
+All navigation should work.
+
+All interactive buttons should work.
+
+All forms should validate.
+
+All settings should persist.
+
+All student progress should persist.
+
+All test results should be stored appropriately.
+
+---
+
+42. IMPLEMENTATION PRIORITIES
+
+Build the application in these development stages, but maintain one unified product and design system.
+
+STAGE 1 — FOUNDATION
+
+- App architecture
+- Splash screen
+- Onboarding
+- Authentication
+- Guest mode
+- Profile
+- Navigation
+- Theme
+- Responsive UI
+- Local persistence
+
+STAGE 2 — LEARNING ENGINE
+
+- Exam selection
+- Syllabus
+- Subjects
+- Chapters
+- Topics
+- Theory
+- Notes
+- Formula library
+- Global search
+- Bookmarks
+
+STAGE 3 — PRACTICE ENGINE
+
+- Question bank
+- Question filters
+- Difficulty
+- Question history
+- Non-repeat system
+- Answer checking
+- Solutions
+- Error reporting
+
+STAGE 4 — TEST ENGINE
+
+- Test configuration
+- Mock test generation
+- Timers
+- Question navigation
+- Exam mode
+- Submission
+- Scoring
+- Detailed analysis
+- Test history
+
+STAGE 5 — MASTREY AI
+
+- JEE AI
+- NEET AI
+- CA AI
+- Chat
+- Question solving
+- Test generation
+- Notes generation
+- AI usage controls
+- Error handling
+
+STAGE 6 — ANALYTICS
+
+- Performance dashboard
+- Subject analytics
+- Chapter analytics
+- Accuracy
+- Speed
+- Weak-topic detection
+- Improvement charts
+
+STAGE 7 — PRODUCTIVITY
+
+- Study planner
+- Flashcards
+- Revision center
+- Streaks
+- XP
+- Achievements
+- Notifications
+
+STAGE 8 — ADVANCED TOOLS
+
+- JEE rank predictor
+- College predictor
+- NEET predictor
+- Historical data integrations
+- Advanced personalization
+
+STAGE 9 — RELEASE
+
+- Security review
+- UI testing
+- Functionality testing
+- Android optimization
+- Offline testing
+- Performance testing
+- Deployment
+- Android package build
+
+---
+
+43. STRICT REQUIREMENTS
+
+1. Build a real application, not just a design prototype.
+2. Do not create fake functionality.
+3. Do not create buttons without actions.
+4. Do not present demo data as real student data.
+5. Do not fabricate official question papers.
+6. Do not fabricate educational content and label it verified.
+7. Do not mix exam systems.
+8. Do not expose API keys.
+9. Do not make paid subscriptions necessary for education.
+10. Do not create repetitive AI questions.
+11. Do not show unvalidated solutions as guaranteed correct.
+12. Maintain student progress.
+13. Keep the application responsive.
+14. Use a premium, consistent design system.
+15. Prioritize educational usefulness over decorative features.
+16. Ensure the architecture can scale.
+17. Ensure every screen is connected to the application.
+18. Provide graceful error states.
+19. Make settings functional.
+20. Make guest mode genuinely usable.
+21. Make the app Android-friendly.
+22. Do not stop after creating the dashboard.
+23. Build all modules into one consistent application.
+24. If a feature requires external credentials or data, build its complete integration architecture and clearly document what must be configured.
+25. If a feature is incomplete, clearly identify it instead of pretending it is complete.
+
+---
+
+44. FINAL EXPECTED RESULT
+
+Deliver MASTREY PRO, a complete premium-quality AI education application that combines JEE, NEET and CA Foundation preparation.
+
+It must contain:
+
+- Beautiful animated onboarding
+- Google login
+- Guest login
+- Personalized dashboard
+- Exam selection
+- Syllabus
+- Complete learning structure
+- Theory
+- Notes
+- Formula library
+- Search
+- Practice engine
+- Non-repeating question system
+- Mock test generator
+- Exam interface
+- Timer
+- Scoring
+- Detailed solutions
+- Performance analytics
+- AI tutors for JEE, NEET and CA
+- Study planner
+- Revision center
+- Flashcards
+- Bookmarks
+- Achievements
+- Notifications
+- Rank predictors
+- College predictors
+- Settings
+- Text size controls
+- Dark/light themes
+- Accessibility
+- Developer profile
+- Offline capabilities
+- Secure backend
+- Database
+- Error handling
+- Android-ready architecture
+
+The final product should feel like a powerful, intelligent, futuristic education platform.
+
+It should be premium in design, reliable in functionality, accurate in educational content, scalable in architecture, fast on mobile devices, and accessible to students without payment.
+
+BRAND IDENTITY
+
+MASTREY PRO
+
+MASTER • PRACTICE • WIN
+
+Learn without limits. Practice without fear. Improve every day.
+
+Developer: V. CHENCHUKIRAN
+DEVSECOPS & CLOUD ENGINEERING
+
+Build it as a real product. Build it beautifully. Build it intelligently. Build it for students.

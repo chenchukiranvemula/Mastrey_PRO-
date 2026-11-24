@@ -1,0 +1,6 @@
+{
+  "name": "Mastrey Pro",
+  "description": "Free AI-powered education ecosystem for JEE, NEET UG, and CA Foundation preparation with syllabus learning, formula center, non-repeating practice, mock tests, analytics, study planner, and exam-specific AI tutors.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

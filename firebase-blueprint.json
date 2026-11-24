@@ -1,0 +1,231 @@
+{
+  "entities": {
+    "UserProfile": {
+      "title": "UserProfile",
+      "description": "Student profile, selected exam, goals, and study streak metrics.",
+      "type": "object",
+      "properties": {
+        "userId": { "type": "string", "description": "Firebase Auth UID matching document ID." },
+        "displayName": { "type": "string", "description": "Student display name (1..60 chars)." },
+        "avatarIndex": { "type": "integer", "description": "Selected avatar preset index (0..7)." },
+        "selectedExam": { "type": "string", "enum": ["JEE_MAIN", "JEE_ADVANCED", "NEET_UG", "CA_FOUNDATION"] },
+        "targetYear": { "type": "integer", "description": "Target examination year (2025..2035)." },
+        "prepLevel": { "type": "string", "enum": ["BEGINNER", "INTERMEDIATE", "ADVANCED"] },
+        "dailyStudyMinutes": { "type": "integer", "description": "Daily target study duration in minutes (15..720)." },
+        "preferredLanguage": { "type": "string", "description": "Preferred explanation language." },
+        "xp": { "type": "integer", "description": "Earned learning XP." },
+        "streakDays": { "type": "integer", "description": "Consecutive active study days." },
+        "lastStudyDate": { "type": "string", "description": "ISO date of last study activity (YYYY-MM-DD)." },
+        "totalStudyMinutes": { "type": "integer", "description": "Cumulative tracked study minutes." },
+        "lastChapterId": { "type": "string", "description": "Last opened chapter identifier." },
+        "createdAt": { "type": "string", "format": "date-time", "description": "Server timestamp set via FieldValue.serverTimestamp()." },
+        "updatedAt": { "type": "string", "format": "date-time", "description": "Server timestamp set via FieldValue.serverTimestamp()." }
+      },
+      "required": ["userId", "displayName", "selectedExam", "targetYear", "prepLevel", "dailyStudyMinutes", "createdAt", "updatedAt"]
+    },
+    "QuestionAttempt": {
+      "title": "QuestionAttempt",
+      "description": "Persistent non-repeating question history record for a student.",
+      "type": "object",
+      "properties": {
+        "userId": { "type": "string" },
+        "examId": { "type": "string", "enum": ["JEE_MAIN", "JEE_ADVANCED", "NEET_UG", "CA_FOUNDATION"] },
+        "subjectId": { "type": "string" },
+        "chapterId": { "type": "string" },
+        "topicId": { "type": "string" },
+        "questionId": { "type": "string" },
+        "questionFingerprint": { "type": "string" },
+        "selectedAnswer": { "type": "string" },
+        "correct": { "type": "boolean" },
+        "skipped": { "type": "boolean" },
+        "difficulty": { "type": "string", "enum": ["EASY", "MEDIUM", "HARD"] },
+        "timeSpentSec": { "type": "integer" },
+        "createdAt": { "type": "string", "format": "date-time", "description": "Server timestamp set via FieldValue.serverTimestamp()." }
+      },
+      "required": ["userId", "examId", "subjectId", "chapterId", "topicId", "questionId", "questionFingerprint", "selectedAnswer", "correct", "skipped", "difficulty", "timeSpentSec", "createdAt"]
+    },
+    "TestSessionResult": {
+      "title": "TestSessionResult",
+      "description": "Completed mock test or practice test record with scoring analytics.",
+      "type": "object",
+      "properties": {
+        "userId": { "type": "string" },
+        "examId": { "type": "string", "enum": ["JEE_MAIN", "JEE_ADVANCED", "NEET_UG", "CA_FOUNDATION"] },
+        "title": { "type": "string" },
+        "mode": { "type": "string", "enum": ["PRACTICE", "EXAM"] },
+        "totalQuestions": { "type": "integer" },
+        "correctCount": { "type": "integer" },
+        "incorrectCount": { "type": "integer" },
+        "unattemptedCount": { "type": "integer" },
+        "score": { "type": "number" },
+        "maxScore": { "type": "number" },
+        "accuracyPercent": { "type": "number" },
+        "durationMinutes": { "type": "integer" },
+        "timeTakenSec": { "type": "integer" },
+        "subjectSummary": { "type": "array", "description": "Bounded summary lines per subject." },
+        "weakTopics": { "type": "array", "description": "Bounded list of weak topic titles." },
+        "createdAt": { "type": "string", "format": "date-time", "description": "Server timestamp set via FieldValue.serverTimestamp()." }
+      },
+      "required": ["userId", "examId", "title", "mode", "totalQuestions", "correctCount", "incorrectCount", "unattemptedCount", "score", "maxScore", "accuracyPercent", "durationMinutes", "timeTakenSec", "createdAt"]
+    },
+    "BookmarkItem": {
+      "title": "BookmarkItem",
+      "description": "Saved formula, topic, note, question, flashcard, or AI answer.",
+      "type": "object",
+      "properties": {
+        "userId": { "type": "string" },
+        "examId": { "type": "string", "enum": ["JEE_MAIN", "JEE_ADVANCED", "NEET_UG", "CA_FOUNDATION"] },
+        "subjectId": { "type": "string" },
+        "chapterId": { "type": "string" },
+        "itemType": { "type": "string", "enum": ["FORMULA", "NOTE", "TOPIC", "QUESTION", "AI_ANSWER", "FLASHCARD"] },
+        "targetId": { "type": "string" },
+        "title": { "type": "string" },
+        "snippet": { "type": "string" },
+        "collectionName": { "type": "string" },
+        "createdAt": { "type": "string", "format": "date-time", "description": "Server timestamp set via FieldValue.serverTimestamp()." }
+      },
+      "required": ["userId", "examId", "itemType", "targetId", "title", "collectionName", "createdAt"]
+    },
+    "PersonalNote": {
+      "title": "PersonalNote",
+      "description": "Student-authored personal study note linked to an exam/chapter.",
+      "type": "object",
+      "properties": {
+        "userId": { "type": "string" },
+        "examId": { "type": "string", "enum": ["JEE_MAIN", "JEE_ADVANCED", "NEET_UG", "CA_FOUNDATION"] },
+        "subjectId": { "type": "string" },
+        "chapterId": { "type": "string" },
+        "title": { "type": "string" },
+        "content": { "type": "string" },
+        "highlighted": { "type": "boolean" },
+        "createdAt": { "type": "string", "format": "date-time", "description": "Server timestamp set via FieldValue.serverTimestamp()." },
+        "updatedAt": { "type": "string", "format": "date-time", "description": "Server timestamp set via FieldValue.serverTimestamp()." }
+      },
+      "required": ["userId", "examId", "title", "content", "highlighted", "createdAt", "updatedAt"]
+    },
+    "TopicRevision": {
+      "title": "TopicRevision",
+      "description": "Spaced-repetition confidence and next-review schedule for a topic.",
+      "type": "object",
+      "properties": {
+        "userId": { "type": "string" },
+        "examId": { "type": "string", "enum": ["JEE_MAIN", "JEE_ADVANCED", "NEET_UG", "CA_FOUNDATION"] },
+        "subjectId": { "type": "string" },
+        "chapterId": { "type": "string" },
+        "topicId": { "type": "string" },
+        "topicTitle": { "type": "string" },
+        "confidence": { "type": "string", "enum": ["EASY", "NEED_REVISION", "DIFFICULT"] },
+        "reviewCount": { "type": "integer" },
+        "nextReviewEpochMs": { "type": "integer" },
+        "createdAt": { "type": "string", "format": "date-time", "description": "Server timestamp set via FieldValue.serverTimestamp()." },
+        "updatedAt": { "type": "string", "format": "date-time", "description": "Server timestamp set via FieldValue.serverTimestamp()." }
+      },
+      "required": ["userId", "examId", "subjectId", "chapterId", "topicId", "topicTitle", "confidence", "reviewCount", "nextReviewEpochMs", "createdAt", "updatedAt"]
+    },
+    "StudyTask": {
+      "title": "StudyTask",
+      "description": "Scheduled task in the student's daily and weekly study planner.",
+      "type": "object",
+      "properties": {
+        "userId": { "type": "string" },
+        "examId": { "type": "string", "enum": ["JEE_MAIN", "JEE_ADVANCED", "NEET_UG", "CA_FOUNDATION"] },
+        "title": { "type": "string" },
+        "subjectName": { "type": "string" },
+        "chapterId": { "type": "string" },
+        "scheduledDate": { "type": "string" },
+        "durationMinutes": { "type": "integer" },
+        "taskType": { "type": "string", "enum": ["LEARN", "PRACTICE", "REVISION", "MOCK_TEST"] },
+        "completed": { "type": "boolean" },
+        "createdAt": { "type": "string", "format": "date-time", "description": "Server timestamp set via FieldValue.serverTimestamp()." },
+        "updatedAt": { "type": "string", "format": "date-time", "description": "Server timestamp set via FieldValue.serverTimestamp()." }
+      },
+      "required": ["userId", "examId", "title", "subjectName", "scheduledDate", "durationMinutes", "taskType", "completed", "createdAt", "updatedAt"]
+    },
+    "AiConversation": {
+      "title": "AiConversation",
+      "description": "Exam-specific Mastrey AI tutor conversation thread.",
+      "type": "object",
+      "properties": {
+        "userId": { "type": "string" },
+        "examProfile": { "type": "string", "enum": ["JEE", "NEET", "CA"] },
+        "title": { "type": "string" },
+        "responseStyle": { "type": "string" },
+        "messageCount": { "type": "integer" },
+        "lastMessagePreview": { "type": "string" },
+        "createdAt": { "type": "string", "format": "date-time", "description": "Server timestamp set via FieldValue.serverTimestamp()." },
+        "updatedAt": { "type": "string", "format": "date-time", "description": "Server timestamp set via FieldValue.serverTimestamp()." }
+      },
+      "required": ["userId", "examProfile", "title", "responseStyle", "messageCount", "createdAt", "updatedAt"]
+    },
+    "AiMessage": {
+      "title": "AiMessage",
+      "description": "Single message inside an AI conversation.",
+      "type": "object",
+      "properties": {
+        "userId": { "type": "string" },
+        "role": { "type": "string", "enum": ["USER", "MODEL"] },
+        "content": { "type": "string" },
+        "bookmarked": { "type": "boolean" },
+        "flagged": { "type": "boolean" },
+        "createdAt": { "type": "string", "format": "date-time", "description": "Server timestamp set via FieldValue.serverTimestamp()." }
+      },
+      "required": ["userId", "role", "content", "bookmarked", "flagged", "createdAt"]
+    },
+    "ContentReport": {
+      "title": "ContentReport",
+      "description": "User-submitted report for incorrect question, AI answer, bug, or feedback.",
+      "type": "object",
+      "properties": {
+        "userId": { "type": "string" },
+        "examId": { "type": "string" },
+        "targetType": { "type": "string", "enum": ["QUESTION", "AI_ANSWER", "FORMULA", "BUG", "FEEDBACK"] },
+        "targetId": { "type": "string" },
+        "reason": { "type": "string" },
+        "createdAt": { "type": "string", "format": "date-time", "description": "Server timestamp set via FieldValue.serverTimestamp()." }
+      },
+      "required": ["userId", "examId", "targetType", "reason", "createdAt"]
+    }
+  },
+  "firestore": {
+    "/users/{userId}": {
+      "schema": { "$ref": "#/entities/UserProfile" },
+      "description": "Authenticated student profile, exam target, streak, and XP."
+    },
+    "/users/{userId}/attempts/{attemptId}": {
+      "schema": { "$ref": "#/entities/QuestionAttempt" },
+      "description": "Per-user question history for non-repeating practice and analytics."
+    },
+    "/users/{userId}/tests/{testId}": {
+      "schema": { "$ref": "#/entities/TestSessionResult" },
+      "description": "Per-user mock test and practice test scores and analytics."
+    },
+    "/users/{userId}/bookmarks/{bookmarkId}": {
+      "schema": { "$ref": "#/entities/BookmarkItem" },
+      "description": "Per-user saved items across formulas, notes, topics, questions, and AI answers."
+    },
+    "/users/{userId}/notes/{noteId}": {
+      "schema": { "$ref": "#/entities/PersonalNote" },
+      "description": "Per-user personal study notes."
+    },
+    "/users/{userId}/revisions/{topicId}": {
+      "schema": { "$ref": "#/entities/TopicRevision" },
+      "description": "Per-user spaced repetition schedule and topic confidence ratings."
+    },
+    "/users/{userId}/study_tasks/{taskId}": {
+      "schema": { "$ref": "#/entities/StudyTask" },
+      "description": "Per-user daily and weekly study planner tasks."
+    },
+    "/users/{userId}/ai_conversations/{conversationId}": {
+      "schema": { "$ref": "#/entities/AiConversation" },
+      "description": "Per-user Mastrey AI tutor conversation threads."
+    },
+    "/users/{userId}/ai_conversations/{conversationId}/messages/{messageId}": {
+      "schema": { "$ref": "#/entities/AiMessage" },
+      "description": "Messages belonging to a user's Mastrey AI conversation."
+    },
+    "/users/{userId}/reports/{reportId}": {
+      "schema": { "$ref": "#/entities/ContentReport" },
+      "description": "Per-user content error reports and app feedback submissions."
+    }
+  }
+}
